@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import CategoriaView from "../views/CategoriaView.vue";
+import AcessorioView from "../views/AcessorioView.vue";
 import EditoraView from "../views/EditoraView.vue";
 import AutorView from "../views/AutorView.vue";
 
@@ -13,9 +13,9 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/categorias",
-      name: "categorias",
-      component: CategoriaView,
+      path: "/acessorios",
+      name: "acessorios",
+      component: AcessorioView,
     },
     {
       path: "/editoras",
