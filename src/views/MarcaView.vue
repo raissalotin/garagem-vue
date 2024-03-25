@@ -3,7 +3,7 @@ import { ref, reactive, onMounted } from "vue";
 import MarcasApi from "@/api/marcas";
 const marcasApi = new MarcasApi();
 
-const defaultMarca = { id: null, nome: "", nacionalidade: "" };
+const defaultMarca = { id: null, nome: "", nacionalidade: "" || null };
 const marcas = ref([]);
 const marca = reactive({ ...defaultMarca });
 
@@ -41,6 +41,7 @@ async function excluir(id) {
   <hr />
   <div class="form">
     <input type="text" v-model="marca.nome" placeholder="Nome" />
+    <input type="text" v-model="marca.nacionalidade" placeholder="Nacionalidade" />
 
     <button @click="salvar">Salvar</button>
     <button @click="limpar">Limpar</button>
