@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AcessorioView from "../views/AcessorioView.vue";
 import EditoraView from "../views/EditoraView.vue";
-import AutorView from "../views/AutorView.vue";
+import CategoriaView from "../views/CategoriaView.vue";
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,9 +24,9 @@ const router = createRouter({
       component: EditoraView,
     },
     {
-      path: "/autores",
-      name: "autores",
-      component: AutorView,
+      path: "/categorias",
+      name: "categorias",
+      component: CategoriaView,
     },
   ],
 });
