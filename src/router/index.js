@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AcessorioView from "../views/AcessorioView.vue";
-import EditoraView from "../views/EditoraView.vue";
+import CorView from "../views/CorView.vue";
 import CategoriaView from "../views/CategoriaView.vue";
 
 
@@ -19,9 +19,9 @@ const router = createRouter({
       component: AcessorioView,
     },
     {
-      path: "/editoras",
-      name: "editoras",
-      component: EditoraView,
+      path: "/cores",
+      name: "cores",
+      component: CorView,
     },
     {
       path: "/categorias",
